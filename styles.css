@@ -1,0 +1,38 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f5f4f4;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.textarea {
+    background-color: #ffffff;
+    font-size: larger;
+    width: 18rem;
+    height: 25rem;
+    border: 0px;
+    margin-bottom: 2rem;
+    resize: none;
+}
+
+.btns {
+    font-size: 1rem;
+    background-color: #ffffff;
+    width: 6.5rem;
+    height: 3.5rem;
+    border: 0px;
+    border-radius: 1.2rem;
+    box-shadow: 1px 1px 18px 6px #e9e8e8;
+    margin: .7rem;
+}
