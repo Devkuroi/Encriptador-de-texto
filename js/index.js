@@ -66,3 +66,12 @@ open.addEventListener("click", () => {
 open.addEventListener("click", () => {
 	open.classList.toggle("active");
 });
+
+// function button dark mode
+
+const dark_mode = document.querySelector(".switch")
+
+dark_mode.addEventListener("click", () => {
+    dark_mode.classList.toggle("active-dark")
+    document.body.classList.toggle("dark")
+})

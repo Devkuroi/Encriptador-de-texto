@@ -7,6 +7,11 @@
 
 body {
 	background-color: #f5f4f4;
+    transition: .3s ease all;
+}
+
+body.dark {
+    background: #0a0b0b;
 }
 
 .container {
@@ -28,6 +33,13 @@ body {
 	box-shadow: 1px 1px 18px 6px #e9e8e8;
 	outline: 0px;
 	padding: 2rem;
+    transition: .3s ease all;
+}
+
+body.dark .textarea {
+    background: #222222;
+    box-shadow: 10px 10px 20px #00000029;
+    color:  #C8C8C8;
 }
 
 .buttons {
@@ -46,6 +58,22 @@ body {
 	box-shadow: 1px 1px 18px 6px #e9e8e8;
 	margin: 0.7rem;
 	cursor: pointer;
+    transition: .3s ease, transform .2s;
+}
+
+body.dark p{
+    transition: .3s ease;
+    color: #C8C8C8;
+}
+
+body.dark .btns {
+    background: #222222;
+    box-shadow: 10px 10px 20px #00000029;
+    color:  #C8C8C8;
+}
+
+.btns:active {
+    transform: scale(1);
 }
 
 header {
@@ -56,6 +84,13 @@ header {
 	margin-bottom: 2rem;
 	background-color: #ffffff;
 	box-shadow: 1px 1px 18px 6px #e9e8e8;
+    transition: .3s ease all;
+}
+
+body.dark header {
+    background: #222222;
+    box-shadow: 10px 10px 20px #00000029;
+    color:  #C8C8C8;
 }
 
 .logo {
@@ -75,6 +110,11 @@ header {
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
+    transition: .3s ease, transform .2s;
+}
+
+body.dark .options li a {
+    color:  #C8C8C8;
 }
 
 .redes {
@@ -84,7 +124,6 @@ header {
 
 .linkedln {
 	width: 6.7rem;
-    
 }
 
 .hamburger {
@@ -132,13 +171,26 @@ header {
 .content-button::after {
 	width: 40px;
 	height: 4px;
-	background-color: #000;
+	background-color: #000000;
 	border-radius: 4px;
 	position: absolute;
 	transition-property: transform;
 	transition-duration: 0.15s;
 	transition-timing-function: ease;
 }
+
+body.dark .content-button {
+    background-color: #C8C8C8;
+}
+
+body.dark .content-button::before {
+    background-color: #C8C8C8;
+}
+
+body.dark .content-button::after {
+    background-color: #C8C8C8;
+}
+
 .content-button::before,
 .content-button::after {
 	content: "";
@@ -198,6 +250,10 @@ header {
 	transition: 0.3s;
 }
 
+body.dark .nav {
+    background: #222222;
+}
+
 .nav.visible {
 	opacity: 1;
 	visibility: visible;
@@ -215,3 +271,39 @@ header {
     display: flex;
     outline: none;
 }
+
+.switch::after {
+    content:"" ;
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #f1f1f1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px #00000033;
+}
+
+.switch.active-dark {
+    background: #ffa500;
+    color: #000;
+
+}
+
+.switch.active-dark::after {
+    right: 0;
+    left: unset;
+}
+
+.switch span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+}
+
